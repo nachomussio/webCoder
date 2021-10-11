@@ -300,7 +300,7 @@ header nav .header__search label button {
 
 div .productos {
   margin: auto;
-  max-width: 100%;
+  width: 100%;
   -webkit-column-count: 3;
           column-count: 3;
   list-style: none;
@@ -316,7 +316,6 @@ div .productos {
 div > .productos img {
   height: auto;
   width: 100%;
-  display: inline-block;
 }
 
 .productos div img:hover {
@@ -343,12 +342,11 @@ div > .productos img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .div__container .container-texto {
   position: absolute;
-  font-size: 50px;
+  font-size: 2rem;
   color: white;
 }
 

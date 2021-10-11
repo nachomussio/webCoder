@@ -140,7 +140,7 @@
     
     div .productos {
         margin:auto;
-        max-width: 100%;
+        width: 100%;
         column-count: 3;
         list-style: none;
 
@@ -152,7 +152,6 @@
     div>.productos img{
       height: auto;
       width: 100%;
-      display: inline-block;
     }
     
     .productos div img:hover{
@@ -170,11 +169,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
 
             .container-texto{
                 position:absolute;
-                font-size: 50px;
+                font-size: 2rem;
                 color: white;
             }
 
