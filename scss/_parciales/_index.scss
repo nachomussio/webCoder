@@ -157,24 +157,41 @@
     
     .productos div img:hover{
         transition:all .5s ease-in-out;
-        -webkit-transform:scale(1.009);
-        transform:scale(1.009);
+        -webkit-transform:scale(1.002);
+        transform:scale(1.002);
         
         @include mobile{
             transition:none
         }
     }
     
-    .containerProd:hover {
-        transition:all .5s ease-in-out;
-        filter: blur(5px);
-        overflow: hidden;
+     .div{
+         &__container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .container-texto{
+                position:absolute;
+                font-size: 50px;
+                color: white;
+            }
+
+         }
+     }
+
+    .div__container:hover {
+        .containerProd{
+            transition:all .5s ease-in-out;
+            filter: blur(2px);
+            overflow: hidden;
         
-        @include mobile{
-            transition:none
+            @include mobile{
+                transition:none
+            }
         }
     }
-    
     
     /*Seccion redes sociales*/
     .redes{
