@@ -1,0 +1,123 @@
+   /*preseteados*/
+
+   $fondo-form: aquamarine;
+   $margin-form: 10px;
+
+
+   %button-transition{
+                       transition: background-color .5s ease-out;
+                       color: black;
+                       background-color:white;
+   }
+
+   .body__grid_contacto{
+       display: grid;
+       grid-template-columns:auto;
+       grid-template-rows:auto;
+       grid-template-areas: "nav"
+                           "img"
+                           "map-form"
+                           "footer"
+       ;
+   }
+
+   header{
+           grid-area: nav;
+
+           @import "./navbar";
+
+   }
+
+   .mainContacto{
+       grid-area:img;
+   }
+   .main{
+       &__img-container{
+           height: auto;
+           width: 100%;
+           display:flex;
+           justify-content: center;
+           margin-top: 100px;
+
+           @include tablet{
+               width: 100%
+           }
+           }
+           &__img{
+               justify-content: center;
+               align-items: center;
+           }
+    }
+       
+
+
+   div.map-form {
+       width: 100%;
+       grid-area: map-form;
+       display:flex;
+       margin-top:50px;
+       justify-content: space-between;
+       background-color: $fondo-form;
+       padding: 20px 0px;
+
+       @include tablet{
+           flex-direction: column;
+           width: 100%;
+           margin:20px;
+           display: block;
+       }
+       article.map{ /*CONTAINER DE TITULO + MAPA*/
+           padding-right:50px;
+           width: 100%;
+           display: flex;
+           align-items: flex-end;
+           flex-direction: column;
+
+           @include tablet{
+               align-items: center;
+               padding-right: 0px;
+           }
+       }
+   
+       
+           .article{
+
+           &__formContacto{
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+
+               @include tablet{
+                align-items: center;
+                justify-content: center;
+               }
+
+               .article{
+                   &__container2{ /*CONTAINER FORM + TITULO*/
+                       width: 100%;
+                       @include tablet{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        
+                    }
+                   }
+
+                   &__container-form{
+                       div{
+                           margin:$margin-form;
+                       }
+                   }
+               }
+           }
+       }
+   }
+
+   /*footer*/
+
+   footer{
+       grid-area:footer;
+
+       @import"./footer";
+   }
