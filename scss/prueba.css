@@ -268,6 +268,28 @@ header nav .header_list_item h2 {
   padding-right: 10px;
 }
 
+.seccionProd h5 {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .seccionProd h5 {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .seccionProd h5 {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
 div .productos {
   margin: auto;
   width: 100%;
@@ -278,8 +300,8 @@ div .productos {
 
 @media screen and (max-width: 425px) {
   div .productos {
-    -webkit-column-count: 2;
-            column-count: 2;
+    -webkit-column-count: auto;
+            column-count: auto;
   }
 }
 
