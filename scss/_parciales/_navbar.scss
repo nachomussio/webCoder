@@ -5,8 +5,23 @@
 }
 @import "./responsive";
 
-header{
+.header__nav {
+    background-color: transparent;
+        
+    @include mobile{
+        background-color: white;
+    }
 
+    @include tablet{
+        background-color: white;
+    }
+}
+
+.navBar {
+    margin-left: 25%;
+}
+
+header{
 
     nav{
         display: flex;
@@ -17,27 +32,22 @@ header{
         .header{
             &__logo{
                 margin-top:10px;
-                display: inline-block;
                 margin-left: 50px;
                 @include tablet{
                     display: flex;
-                    justify-content: center;
-                    margin:auto;
-                    padding-top: 20px;
+                    justify-content:space-between;
+                    margin-left: 0px;
                 }
                 @include mobile{
-                    padding-top: 10px;
+                                        display: flex;
+                    justify-content:space-between;
+                    margin-left: 0px;
                 }
-            }
 
-            &__nav-bars{
-                opacity: 0;
-                @include tablet{
-                    opacity: 1;
-                    color: black;
-                    margin-top: 30px;
-                    margin-right: 20px;
-                    justify-content:flex-end;
+                &__search{
+                    .buttonStyle{
+                        border-radius: 50px !important;
+                    }
                 }
             }
 
@@ -48,14 +58,6 @@ header{
                 }
                 
             }
-            &__list{
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 20px;
-                margin-left: 100px;
-            }
             &_list_item{
                 margin: 10px;
                 a{
@@ -64,33 +66,6 @@ header{
                 }
                 h2{
                     font-size: 15px;
-                }
-            }
-            &__search{
-                label{
-                    display: flex;
-                    margin: 20px 50px 0px 0px;
-                    @include tablet {
-                        display: none;
-                    }
-                    input{
-                        border-radius: 50px;
-                        border: 3px solid grey;
-                        padding: 0px 3px;
-                    }   
-                        
-                        
-                        button{
-                            border-radius: 50px;
-                            background-color: black;
-                            color:white;
-                            border: 3px solid grey;
-                            padding: 2px 5px;
-                        }
-
-                            button:hover{
-                                @extend  %button-transition;
-                            }
                 }
             }
         }
