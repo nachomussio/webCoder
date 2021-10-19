@@ -46,7 +46,8 @@
     .videoIndex{
         display: grid;
         place-items: center;
-        position: relative;
+        overflow: hidden;
+        width: 100%;
 
         @include mobile{
             display: none;

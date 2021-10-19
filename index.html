@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="gridGral">
-    <header class="w-100">
+    <header class="w-100 col-lg-12 col-md-12 col-sm-12">
 
       <nav class="header__nav navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
@@ -26,25 +26,35 @@
           </button>
           <div class="collapse navbar-collapse justify-content-around " id="navbarSupportedContent">
             <ul class="navbar-nav navBar mb-2 d-flex mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Link</a>
-              </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRODUCTOS
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="./pages/productos.html">ACCESORIOS</a></li>
+                  <li><a class="dropdown-item" href="./pages/productos.html">CAMISAS</a></li>
+                  <li><a class="dropdown-item" href="./pages/productos.html">REMERAS</a></li>
+                  <li><a class="dropdown-item" href="./pages/productos.html">PANTALONES</a></li>
+                  <li><a class="dropdown-item" href="./pages/sale.html">OFERTAS</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="./pages/productos.html">TABLAS DE SURF</a></li>
+                  <li><a class="dropdown-item" href="./pages/productos.html">ACCESORIOS DE SURF</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="">Disabled</a>
+                <a class="nav-link active" href="./pages/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./pages/nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./pages/sale.html" style="color: red;">SALE!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./pages/mi-cuenta.html">MI CUENTA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./pages/carrito.html">CARRITO</a>
               </li>
             </ul>
             <form class="d-flex header__search">
@@ -58,59 +68,60 @@
       </header>
         
         <main>
-
-            <div class="videoIndex">
+            <div>
+              <div class="videoIndex col-lg-12">
 
                 <video loop autoplay muted poster="sunset video" src="./videos/index/videoindex.webm"></video>
                 <div class="overlayVideo buttonCTA">
                     <h3>WINTER SALE! HASTA 50% OFF EN ROPA DE INVIERNO</h3>
                     <a href="#"><h4>COMPRAR AHORA!</h4></a>
                 </div>
-           
+              </div>
             </div>
             <section class="containerTop">
-
+              <div class="container-fluid col-lg-12 col-md-12 col-sm-12">
                 <div class="titulo"><!--SECCION MAS VENDIDOS-->
-                    <h4>MAS VENDIDOS</h4>
-                </div>
+                  <h4>MAS VENDIDOS</h4>
+              </div>
 
-                <div class="prodTop"> <!--Productos mas vendidos con nombre y precio-->
-                        <div class="containerFoto"><a href=""><img width="100%" src="./images/productos/producto-destacado-3.jpg" alt="producto top 3"><p>$0000</p></a></div>
-                        <div class="containerFoto"><a href=""><img width="100%" src="./images/productos/producto-destacado-1.jpg" alt="producto top 1"><p>$0000</p></a></div>
-                        <div class="containerFoto"><a href=""><img width="100%" src="./images/productos/producto-destacado-2.jpg" alt="producto top 2"><p>$0000</p></a></div>
-                </div>
+              <div class="prodTop"> <!--Productos mas vendidos con nombre y precio-->
+                      <div class="containerFoto"><a href=""><img width="100%" src="./images/productos/producto-destacado-3.jpg" alt="producto top 3"><p>$0000</p></a></div>
+                      <div class="containerFoto"><a href=""><img width="100%" src="./images/productos/producto-destacado-1.jpg" alt="producto top 1"><p>$0000</p></a></div>
+                      <div class="containerFoto"><a href=""><img width="100%" src="./images/productos/producto-destacado-2.jpg" alt="producto top 2"><p>$0000</p></a></div>
+              </div>
 
+              </div>
             </section>
-
-            <div class="seccionProd"><!--fotos con links a secciones mas vendidas-->
-              <h5>CATEGORÍAS</h5>
-                <div class="productos listas">
-                    <div class="div__container">
-                      <a href="#"><img class="containerProd" src="./images/productos/accesorios.jpg" alt="accesorios"> </a>
-                      <h6 class="container-texto">ACCESORIOS</h6>
-                    </div>
-                    <div class="div__container">
-                      <a href=""><img class="containerProd" src="./images/productos/tablas.jpg" alt="tablas"></a>
-                      <h6 class="container-texto">TABLAS</h6>
-                    </div>
-                    <div class="div__container">
-                      <a href=""><img class="containerProd" src="./images/productos/remeras.jpg" alt="remeras"></a>
-                      <h6 class="container-texto">REMERAS</h6>
-                    </div>
-                    <div class="div__container">
-                      <a href=""><img class="containerProd" src="./images/productos/pantalones.jpg" alt="pantalones"></a>
-                      <h6 class="container-texto">PANTALONES</h6>
-                    </div>
-                    <div class="div__container">
-                      <a href=""><img class="containerProd" src="./images/productos/camisas.jpg" alt="camisas"></a>
-                      <h6 class="container-texto">CAMISAS</h6>
-                    </div>
-                    <div class="div__container">
-                      <a href=""><img class="containerProd" src="./images/productos/vertodo.jpg" alt="ver más"></a>
-                      <h6 class="container-texto">VER MÁS</h6>
-                    </div>
-                </div>
-
+            <div class="container-fluid col-lg-12 col-md-12 col-sm-12">
+              <div class="seccionProd"><!--fotos con links a secciones mas vendidas-->
+                <h5>CATEGORÍAS</h5>
+                  <div class="productos listas">
+                      <div class="div__container">
+                        <a href="#"><img class="containerProd" src="./images/productos/accesorios.jpg" alt="accesorios"> </a>
+                        <h6 class="container-texto">ACCESORIOS</h6>
+                      </div>
+                      <div class="div__container">
+                        <a href=""><img class="containerProd" src="./images/productos/tablas.jpg" alt="tablas"></a>
+                        <h6 class="container-texto">TABLAS</h6>
+                      </div>
+                      <div class="div__container">
+                        <a href=""><img class="containerProd" src="./images/productos/remeras.jpg" alt="remeras"></a>
+                        <h6 class="container-texto">REMERAS</h6>
+                      </div>
+                      <div class="div__container">
+                        <a href=""><img class="containerProd" src="./images/productos/pantalones.jpg" alt="pantalones"></a>
+                        <h6 class="container-texto">PANTALONES</h6>
+                      </div>
+                      <div class="div__container">
+                        <a href=""><img class="containerProd" src="./images/productos/camisas.jpg" alt="camisas"></a>
+                        <h6 class="container-texto">CAMISAS</h6>
+                      </div>
+                      <div class="div__container">
+                        <a href=""><img class="containerProd" src="./images/productos/vertodo.jpg" alt="ver más"></a>
+                        <h6 class="container-texto">VER MÁS</h6>
+                      </div>
+                  </div>
+              </div>
             </div>
 
                 <section class="redes"> <!--Logo de Instagram con link-->
