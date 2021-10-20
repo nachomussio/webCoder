@@ -690,7 +690,7 @@ div.map-form {
   }
 }
 
-div.map-form article.map {
+div.map-form article .map {
   /*CONTAINER DE TITULO + MAPA*/
   padding-right: 50px;
   width: 100%;
@@ -707,7 +707,7 @@ div.map-form article.map {
 }
 
 @media screen and (max-width: 768px) {
-  div.map-form article.map {
+  div.map-form article {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
