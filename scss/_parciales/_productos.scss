@@ -1,0 +1,35 @@
+.gridProductos{
+    display: grid;
+    grid-template-areas: "prodHeader"
+                        "prodImg"
+                        "prodMain"
+                        "prodFooter";
+}
+
+header{
+    grid-area: prodHeader;
+}
+
+main{
+    grid-area: prodImg;
+}
+
+.div{
+    &__containerProductos{
+        grid-area: prodMain;
+    }
+}
+
+footer{
+    grid-area: prodFooter;
+}
+
+
+.main{
+    &__containerImgProd{
+        width: 100%;
+        margin-top: 100px;
+    }
+
+}
+
