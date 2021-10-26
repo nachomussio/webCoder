@@ -20,16 +20,14 @@ main{
     }
 }
 
-footer{
-    grid-area: prodFooter;
-}
-
-
 .main{
     &__containerImgProd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        margin-top: 100px;
+        padding-top: 00px;
+
     }
 
 }
-

@@ -20,10 +20,6 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header" "main"                         "footer";
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
 }
 
 .listas {
@@ -51,7 +47,7 @@ footer {
 }
 
 /*header y nav*/
-footer .footer__form-container fieldset input.button-news:hover, .footer__form-container fieldset input.button-news:hover {
+.footer__form-container fieldset input.button-news:hover, footer .footer__form-container fieldset input.button-news:hover {
   -webkit-transition: background-color .5s ease-out;
   transition: background-color .5s ease-out;
   color: black;
@@ -119,7 +115,7 @@ header nav .header__logo {
 }
 
 header nav .header__logo__search .buttonStyle {
-  border-radius: 50px !important;
+  border-radius: 50px;
 }
 
 header nav .header__menu {
@@ -373,6 +369,129 @@ div > .productos img {
   color: black;
 }
 
+/*footer*/
+.footer__form-container fieldset input.button-news:hover, footer .footer__form-container fieldset input.button-news:hover {
+  -webkit-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+  color: black;
+  background-color: white;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer__container-form-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__container-form-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer__container-form-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer__form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.footer__form-container h5 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer__form-container fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+.footer__form-container fieldset input.email-input {
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid grey;
+  width: 100%;
+}
+
+.footer__form-container fieldset input.button-news {
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  border: 3px solid grey;
+  margin: 10px;
+  padding: 10px 30px;
+}
+
+.footer__cats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 425px) {
+  .footer__cats {
+    display: none;
+  }
+}
+
+.footer__container-foot {
+  width: 100%;
+  text-align: center;
+}
+
 /*PAGINA PRODUCTOS*/
 .filtros {
   display: -webkit-box;
@@ -416,7 +535,7 @@ div > .productos img {
   height: auto;
 }
 
-footer .footer__form-container fieldset input.button-news:hover, .footer__form-container fieldset input.button-news:hover {
+.footer__form-container fieldset input.button-news:hover, footer .footer__form-container fieldset input.button-news:hover {
   -webkit-transition: background-color .5s ease-out;
   transition: background-color .5s ease-out;
   color: black;
@@ -484,7 +603,7 @@ header nav .header__logo {
 }
 
 header nav .header__logo__search .buttonStyle {
-  border-radius: 50px !important;
+  border-radius: 50px;
 }
 
 header nav .header__menu {
@@ -511,7 +630,7 @@ header nav .header_list_item h2 {
 }
 
 /*preseteados*/
-footer .footer__form-container fieldset input.button-news:hover, .footer__form-container fieldset input.button-news:hover {
+.footer__form-container fieldset input.button-news:hover, footer .footer__form-container fieldset input.button-news:hover {
   -webkit-transition: background-color .5s ease-out;
   transition: background-color .5s ease-out;
   color: black;
@@ -602,7 +721,7 @@ header header nav .header__logo {
 }
 
 header header nav .header__logo__search .buttonStyle {
-  border-radius: 50px !important;
+  border-radius: 50px;
 }
 
 header header nav .header__menu {
@@ -671,9 +790,9 @@ div.map-form {
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
   background-color: aquamarine;
   padding: 20px 0px;
 }
@@ -778,7 +897,7 @@ footer {
   /*footer*/
 }
 
-footer .footer__form-container fieldset input.button-news:hover, .footer__form-container fieldset footer input.button-news:hover {
+.footer__form-container fieldset footer input.button-news:hover, footer .footer__form-container fieldset input.button-news:hover {
   -webkit-transition: background-color .5s ease-out;
   transition: background-color .5s ease-out;
   color: black;
@@ -956,7 +1075,7 @@ footer .footer__container-foot {
   }
 }
 
-footer .footer__form-container fieldset input.button-news:hover, .footer__form-container fieldset input.button-news:hover {
+.footer__form-container fieldset input.button-news:hover, footer .footer__form-container fieldset input.button-news:hover {
   -webkit-transition: background-color .5s ease-out;
   transition: background-color .5s ease-out;
   color: black;
@@ -1078,7 +1197,7 @@ footer {
   text-align: center;
 }
 
-footer .footer__form-container fieldset input.button-news:hover, .footer__form-container fieldset input.button-news:hover {
+.footer__form-container fieldset input.button-news:hover, footer .footer__form-container fieldset input.button-news:hover {
   -webkit-transition: background-color .5s ease-out;
   transition: background-color .5s ease-out;
   color: black;
@@ -1146,7 +1265,7 @@ header nav .header__logo {
 }
 
 header nav .header__logo__search .buttonStyle {
-  border-radius: 50px !important;
+  border-radius: 50px;
 }
 
 header nav .header__menu {
@@ -1172,7 +1291,7 @@ header nav .header_list_item h2 {
   font-size: 15px;
 }
 
-footer .footer__form-container fieldset input.button-news:hover, .footer__form-container fieldset input.button-news:hover {
+.footer__form-container fieldset input.button-news:hover, footer .footer__form-container fieldset input.button-news:hover {
   -webkit-transition: background-color .5s ease-out;
   transition: background-color .5s ease-out;
   color: black;
@@ -1304,7 +1423,7 @@ footer {
       grid-template-areas: "nav" "main" "footer";
 }
 
-footer .footer__form-container fieldset input.button-news:hover, .footer__form-container fieldset input.button-news:hover {
+.footer__form-container fieldset input.button-news:hover, footer .footer__form-container fieldset input.button-news:hover {
   -webkit-transition: background-color .5s ease-out;
   transition: background-color .5s ease-out;
   color: black;
