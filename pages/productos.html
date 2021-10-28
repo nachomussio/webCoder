@@ -65,28 +65,111 @@
     </nav>
     
     </header>
-    <main>
-      <div class="col-lg-12">
-        <div class="main__containerImgProd">
-          <img src="../images/productos/bannerProd.jpeg" alt="banner productos">
-        </div>
-      </div>
+    <main class="prodMain">
+      <div class="main__img-cont-nos container-fluid col-md-12">
+        <img width="100%" class="main__img-prod" src="../images/productos/bannerProd.jpeg" alt="img-nos">
+    </div>
     </main>
     <div class="div__containerProductos">
-      <aside class="div__containerFiltros col-lg-3">
-        <div class="dropdown">
+      <aside class="div__containerFiltros col-sm-12 col-md-12 col-lg-4">
+        <div class="container-fluid col-sm-3 col-md-6 col-lg-12 div__prodSearch">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+        <div class="dropdown div__containerDropdowns">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             CATEGORÍA
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Remeras</a></li>
+            <li><a class="dropdown-item" href="#">Pantalones</a></li>
+            <li><a class="dropdown-item" href="#">Camperas</a></li>
+            <li><a class="dropdown-item" href="#">Camisas</a></li>
+            <li><a class="dropdown-item" href="#">Tablas</a></li>
+            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+          </ul>
+        </div>
+        <div class="dropdown div__containerDropdowns">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            ORDENAR POR:
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Precio: menor a mayor</a></li>
+            <li><a class="dropdown-item" href="#">Precio:mayor a menor</a></li>
+            <li><a class="dropdown-item" href="#">Mayor relevancia</a></li>
+          </ul>
+        </div>
+        <div class="dropdown div__containerDropdowns">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            TALLE:
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">XS</a></li>
+            <li><a class="dropdown-item" href="#">S</a></li>
+            <li><a class="dropdown-item" href="#">M</a></li>
+            <li><a class="dropdown-item" href="#">L</a></li>
+            <li><a class="dropdown-item" href="#">XL</a></li>
           </ul>
         </div>
       </aside>
-      <article class="main__containerProd col-lg-9">
-
+      <article class="div__containerProd col-sm-12 col-lg-8"> <!--IMAGENES PRODUCTOS-->
+        <div class="container-fluid">
+          <div class="row row-cols-6 div__containerCardsProd">
+            <div class="col text-center" style="width: 18rem;">
+              <a href="#"><img src="../images/sale/productos en descuento/shortSale.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">PANTALÓN CORTO</h5>
+                <span class="badge rounded-pill bg-danger">HOT</span>
+                <p class="card-text">$3.000</p>
+                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            </div>
+          </div>  
+          <div class="col text-center" style="width: 18rem;">
+            <a href="#"><img src="../images/sale/productos en descuento/tablaSale.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">TABLA FLOWER</h5>
+              <span class="badge rounded-pill bg-danger">HOT</span>
+              <p class="card-text">$25.000</p>
+              <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div>  
+        <div class="col text-center" style="width: 18rem;">
+          <a href="#"><img src="../images/sale/productos en descuento/remeraSale.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">REMERA RAINBOW</h5>
+            <span class="badge rounded-pill bg-danger">HOT</span>
+            <p class="card-text">$2.000</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>  
+      <div class="col text-center" style="width: 18rem;">
+        <a href="#"><img src="../images/sale/productos en descuento/pantalonSale.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">JEAN HOMBRE</h5>
+          <p class="card-text">$8.000</p>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>  
+    <div class="col text-center" style="width: 18rem;">
+      <a href="#"><img src="../images/sale/productos en descuento/pantalonSale.jpg" class="card-img-top" alt="..."></a>
+      <div class="card-body">
+        <h5 class="card-title">JEAN HOMBRE</h5>
+        <p class="card-text">$8.000</p>
+        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+      </div>
+    </div>  
+    <div class="col text-center" style="width: 18rem;">
+      <a href="#"><img src="../images/sale/productos en descuento/pantalonSale.jpg" class="card-img-top" alt="..."></a>
+      <div class="card-body">
+        <h5 class="card-title">JEAN HOMBRE</h5>
+        <p class="card-text">$8.000</p>
+        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+      </div>
+    </div>  
+  </div>
+</div>
       </article>
     </div>
   <footer class="footerProd"<!--Pie de página con información y mini menú-->

@@ -10,10 +10,13 @@ header{
     grid-area: prodHeader;
 }
 
-main{
+.prodMain{
     grid-area: prodImg;
 }
 
+.footerProd{
+    grid-area: prodFooter;
+}
 .div{
     &__containerProductos{
         grid-area: prodMain;
@@ -21,13 +24,63 @@ main{
 }
 
 .main{
-    &__containerImgProd{
+    &__img-prod{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding-top: 00px;
+        padding-top: 100px;
 
     }
-
 }
+
+.div{
+    &__containerProductos{
+        display: flex;
+        
+        @include mobile{
+            display: inline;
+        }
+    }
+    &__containerFiltros{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        width: 100%;
+
+        @include mobile{
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    &__containerDropdowns{
+        margin: 1rem;
+        width: 100%;
+        
+        @include mobile{
+            margin: 0 1px;
+            display: flex;
+            align-items:center;
+        }
+    }
+
+    &__prodSearch{
+        @include mobile{
+            display: none;
+        }
+    }
+        
+        &__containerCardsProd{
+            display: flex;
+            margin-top:1rem;
+            width: 100%;
+            
+            @include mobile{
+                flex-direction: column;
+                align-items: center;
+            }   
+        }
+}
+
