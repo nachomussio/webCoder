@@ -492,7 +492,7 @@ footer {
   text-align: center;
 }
 
-/*PAGINA PRODUCTOS*/
+/*PAGINA SALE!*/
 .filtros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,7 +505,6 @@ footer {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
@@ -1409,6 +1408,58 @@ footer {
 .footer__container-foot {
   width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .div__prodSale {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .div__prodFiltros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .div__carousel {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .div__prodSale {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .div__prodFiltros ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px 10px 0px 10px;
+  }
+  .div__carousel {
+    padding-top: 100px;
+  }
 }
 
 .gridGral-nos {
