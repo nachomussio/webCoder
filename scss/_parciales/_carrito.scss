@@ -24,6 +24,15 @@
         margin-left:50px;
         display: flex;
         flex-direction: column;
+
+        @include mobile{
+            margin: 0px;
+            padding: 7rem 0rem 0rem 0rem;
+        }
+        @include tablet{
+            margin: 0px;
+            padding: 7rem 0rem 0rem 0rem;
+        }
     }
 
     &__container-item{
@@ -37,12 +46,18 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        @include mobile{
+            align-items: center;
+            flex-direction: column;
+        }
     }
 
     &__container-itemName{
         padding-left: 20px;
         display: flex;
         flex-direction: column;
+
     }
 
     &__container-descItem{
@@ -85,16 +100,39 @@
     margin-top: 20px;
 }
 
+.btn-resp{
+    @include mobile{
+        width: 75% !important;
+    }
+}
+
 .div{
     &__carrito{
         background-color: silver;
         margin: 7rem 0rem;
         padding-top: 1rem;
-        padding-bottom: 20rem;
+        display: flex;
+        padding-bottom: 5rem;
     }
 
     &__container-resumen{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__titleResumen{
         text-align: center;
+    }
+
+    &__container-detalle{
+        text-align: start;
+    }
+
+    &__btn-pagar{
+        align-self: center;
+        justify-self:flex-end;
+
     }
 }

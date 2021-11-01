@@ -1810,6 +1810,20 @@ footer.footerCuenta {
           flex-direction: column;
 }
 
+@media screen and (max-width: 425px) {
+  .div__container-mainCarrito {
+    margin: 0px;
+    padding: 7rem 0rem 0rem 0rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .div__container-mainCarrito {
+    margin: 0px;
+    padding: 7rem 0rem 0rem 0rem;
+  }
+}
+
 .div__container-item {
   border-top: black solid 1px;
   border-bottom: black solid 1px;
@@ -1827,6 +1841,18 @@ footer.footerCuenta {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  .div__container-space {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .div__container-itemName {
@@ -1873,16 +1899,46 @@ footer.footerCuenta {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 425px) {
+  .btn-resp {
+    width: 75% !important;
+  }
+}
+
 .div__carrito {
   background-color: silver;
   margin: 7rem 0rem;
   padding-top: 1rem;
-  padding-bottom: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 5rem;
 }
 
 .div__container-resumen {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.div__titleResumen {
   text-align: center;
+}
+
+.div__container-detalle {
+  text-align: start;
+}
+
+.div__btn-pagar {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  justify-self: flex-end;
 }
 
 .gridProductos {

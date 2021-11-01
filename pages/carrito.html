@@ -92,7 +92,7 @@
                 Tengo un código de descuento
               </button>
             <div class="collapse btn-coll" id="collapseExample">
-              <div class="w-50">
+              <div class="w-50 btn-resp">
                 <form class="d-flex">
                   <input class="form-control me-2 btn-code" type="search" placeholder="Código de 6 dígitos" aria-label="Search">
                   <button class="btn btn-outline-success btn-coupon" type="submit">Aplicar</button>
@@ -107,6 +107,32 @@
             <div class="div__container-resumen">
               <div class="div__titleResumen">
                 <h5>Resumen de compra</h5>
+              </div>
+              <div class="div_container-detalle">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Cant.</th>
+                      <th scope="col">Productos</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Tabla Wood</td>
+                      <td>$50.000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td><strong>TOTAL:</strong></td>
+                      <td>$50.000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="div__btn-pagar">
+                <span><input type="submit" value="Pagar" class="btn-coupon btn"></span>
               </div>
             </div>
           </div>
