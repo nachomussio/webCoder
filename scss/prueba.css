@@ -470,7 +470,7 @@ footer {
   border-radius: 50px;
   background-color: black;
   color: white;
-  border: 3px solid grey;
+  border: 1px solid grey;
   margin: 10px;
   padding: 10px 30px;
 }
@@ -993,7 +993,7 @@ footer .footer__form-container fieldset input.button-news {
   border-radius: 50px;
   background-color: black;
   color: white;
-  border: 3px solid grey;
+  border: 1px solid grey;
   margin: 10px;
   padding: 10px 30px;
 }
@@ -1172,7 +1172,7 @@ footer {
   border-radius: 50px;
   background-color: black;
   color: white;
-  border: 3px solid grey;
+  border: 1px solid grey;
   margin: 10px;
   padding: 10px 30px;
 }
@@ -1388,7 +1388,7 @@ footer {
   border-radius: 50px;
   background-color: black;
   color: white;
-  border: 3px solid grey;
+  border: 1px solid grey;
   margin: 10px;
   padding: 10px 30px;
 }
@@ -1572,7 +1572,7 @@ footer {
   border-radius: 50px;
   background-color: black;
   color: white;
-  border: 3px solid grey;
+  border: 1px solid grey;
   margin: 10px;
   padding: 10px 30px;
 }
@@ -1665,6 +1665,226 @@ main.main__nosotros div.main__faq div.card button.accordion-button:focus {
           box-shadow: none;
 }
 
+.footer__form-container fieldset input.button-news:hover, footer .footer__form-container fieldset input.button-news:hover {
+  -webkit-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+  color: black;
+  background-color: white;
+}
+
+.gridCuenta {
+  grid-area: "navCuenta" "mainCuenta" "footerCuenta";
+}
+
+main.mainCuenta {
+  grid-area: mainCuenta;
+  padding-bottom: 100px;
+}
+
+footer.footerCuenta {
+  grid-area: footerCuenta;
+}
+
+.div__containerLogin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+}
+
+.div__containerLogin h2 {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.div__containerTitle {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.div__formLogin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.div__formLogin h3 {
+  font-size: 0.8rem;
+}
+
+.div__formLogin form {
+  margin: 0.8rem;
+  width: 50%;
+}
+
+.div__formLogin .email-input {
+  border-radius: 50px;
+  text-align: start;
+  height: 40px;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.div__formLogin .button-send {
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  border: 3px solid grey;
+  margin: 10px;
+  padding: 10px 30px;
+}
+
+.div__formLogin .button-send:hover {
+  -webkit-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+  color: black;
+  background-color: white;
+}
+
+.div__containerUnder {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.div__containerUnder a {
+  text-align: center;
+  font-size: 0.8rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.gridCarrito {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "navCarrito" "mainCarrito" "footerCarrito";
+}
+
+.navCarrito {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: navCarrito;
+}
+
+.mainCarrito {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: mainCarrito;
+}
+
+.footerCarrito {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footerCarrito;
+}
+
+.div__container-mainCarrito {
+  padding: 7rem 0rem;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.div__container-item {
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.div__container-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.div__container-itemName {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.div__container-descItem h3 {
+  font-size: 0.8rem;
+}
+
+.div__container-precio h2 {
+  font-size: 1rem;
+}
+
+.btn-coupon {
+  border-radius: 50px;
+  color: white;
+  background-color: black;
+  border: 1px solid gray;
+  margin-top: 20px;
+}
+
+.btn-coupon:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+}
+
+.btn-coll {
+  border: none;
+}
+
+.btn-code {
+  border-radius: 50px;
+  color: white;
+  border: 1px solid gray;
+  margin-top: 20px;
+}
+
+.div__carrito {
+  background-color: silver;
+  margin: 7rem 0rem;
+  padding-top: 1rem;
+  padding-bottom: 20rem;
+}
+
+.div__container-resumen {
+  width: 100%;
+  text-align: center;
+}
+
 .gridProductos {
   display: -ms-grid;
   display: grid;
@@ -1739,7 +1959,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1rem;
-  width: 100%;
 }
 
 @media screen and (max-width: 425px) {

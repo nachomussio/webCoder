@@ -14,7 +14,7 @@
         <link rel="shortcut icon" href="../images/icons/header/surfboard24px.png" type="image/x-icon">
         <title>MI CUENTA - SURFSHOP</title>
   </head>
-<body>
+<body class="gridCuenta">
   <header class="w-100 col-lg-12 col-md-12 col-sm-12">
 
     <nav class="header__nav navbar navbar-expand-lg navbar-light ">
@@ -57,14 +57,91 @@
             </li>
           </ul>
           <form class="d-flex header__search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-dark buttonStyle" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
+            <button class="btn btn-outline-dark buttonStyle" type="submit">Buscar</button>
           </form>
         </div>
       </div>
     </nav>
     
     </header>
+    <main class="mainCuenta">
+      <div class="div__containerLogin">
+        <div class="div__containerTitle">
+          <h2>Inicio > Mi cuenta > Login</h2>
+          <div class="div__loginTitle">
+            <h1>INICIAR SESIÓN</h1>
+          </div>
+        </div>
+      </div>
+      
+      <div class="div__formLogin">
+        <form action="#" method="post"> <!--MAIL Y CONTRASEÑA-->
+          <fieldset>
+                <h3>Email</h3>
+                <input class="email-input form-control" type="email" name="email" id="email" placeholder="Ingresá tu email">
+            </label>
+          </fieldset>
+        </form>
+        <form action="#" method="post"> <!--MAIL Y CONTRASEÑA-->
+          <fieldset>
+                <h3>Contraseña</h3>
+                <input class="email-input form-control" type="password" name="pass" id="pass" placeholder="Contraseña">
+            </label>
+          </fieldset>
+        </form>
+        <span><input type="submit" value="INICIAR SESIÓN" class="button-send"></span>
+    </div>
+    <div class="div__containerUnder">
+      ¿No tenes cuenta aún? <a href="#">Crear cuenta</a>
+    </div>
+    </main>
+
+    <footer class="footerCuenta"><!--Pie de página con información y mini menú-->
+      <div class="footer__container-form-menu">
+          <div class="footer__form-container">
+            <h5>SUSCRIBITE A NUESTRO NEWSLETTER</h5>
+          <form action="#" method="post">
+                <fieldset>
+                        <input class="email-input" type="email" name="email" id="email" placeholder="Ingresá tu email">
+                        <span><input type="submit" value="Enviar" class="button-news"></span>
+                    </label>
+                </fieldset>
+            
+            </form>
+        </div>
+        <div class="footer__cats">
+          <div class="footer__container-info">
+              <ul style="list-style: none;">
+                  <h5>INFORMACIÓN</h5>
+                  <li>Términos y condiciones</li>
+                  <li>Sobre nosotros</li>
+                  <li>Preguntas frecuentes</li>
+                  <li>Nuestros locales</li>
+                  <li>Envíos y devoluciones</li>
+                  <li>Promociones</li>
+                  <li>Botón de arrepentimiento</li>
+                  <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" style="text-decoration: none;">Defensa de las y los Consumidores</a> </li>
+              </ul>  
+          </div>
+          <div class="footer__container-sec">
+              <ul style="list-style: none;">
+                  <h5>SURFSHOP</h5>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Niños</li>
+                  <li>Tablas</li>
+                  <li><a href="../pages/sale.html" style="text-decoration: none;">SALE!</a></li>
+              </ul>
+          </div>
+        </div>
+        </div>
+
+      <!--Logos medios de pago-->
+      <div class="footer__container-foot">
+        <h6 class="footer__texto">Copyright 2021 - SURFSHOP ARGENTINA</h6>
+      </div>
+  </footer>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
