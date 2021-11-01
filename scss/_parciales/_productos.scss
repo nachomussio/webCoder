@@ -83,7 +83,7 @@ header{
 
 
     &__prodSearch{
-
+        
         @include mobile{
             display: none;
         }
@@ -92,7 +92,7 @@ header{
             padding:none;
         }
     }
-        
+    
         &__containerCardsProd{
             display: flex;
             margin-top:1rem;
